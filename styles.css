@@ -1,0 +1,155 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.main-container {
+  width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin: 4% auto;
+}
+
+.photo-countainer {
+  height: 450px;
+  width: 300px;
+  background-image: url("images/image-product-desktop.jpg");
+  background-size: cover;
+}
+
+.info-container {
+  background-color: #f2f2f2;
+  width: 300px;
+  height: 450px;
+}
+
+.item-type {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.item-name {
+  color: #1c232b;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 29px;
+}
+
+.value {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+.descont-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+}
+.descont-price {
+  color: #3d8161;
+}
+
+.full-price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+}
+.full-price span {
+  text-decoration: line-through;
+}
+button {
+  background-color: #3d8161;
+  width: 236px;
+  height: 48px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+button img {
+  margin-right: 12px;
+}
+button:hover {
+  background: #1a4032;
+}
+
+/*Responsive*/
+
+@media (max-width: 375px) {
+  .main-container {
+    max-width: 340px;
+    height: 610px;
+    flex-direction: column;
+  }
+  .info-container {
+    width: 340px;
+  }
+
+  .photo-countainer {
+    background-image: url(images/image-product-mobile.jpg);
+    height: 240px;
+    width: 340px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .description {
+    width: 250px;
+    padding: 24px;
+  }
+  h3 {
+    margin-bottom: 12px;
+  }
+  h1 {
+    margin-bottom: 16px;
+    width: 295px;
+  }
+  p {
+    margin-bottom: 24px;
+  }
+  .value {
+    margin-bottom: 20px;
+  }
+  .botton {
+    width: 100%;
+  }
+}
